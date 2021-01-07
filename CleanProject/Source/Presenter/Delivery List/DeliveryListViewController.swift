@@ -8,13 +8,13 @@
 import UIKit
 import IGListKit
 
-internal class DeliveryListViewController: UIViewController {
+internal class DeliveryListViewController: UIViewController, DeliveryListPresenterView {
     
     internal var collectionView: UICollectionView = {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.scrollDirection = UICollectionView.ScrollDirection.vertical
         let view: UICollectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
-        view.backgroundColor = UIColor.clear
+        view.backgroundColor = UIColor.white
         return view
     }()
     
@@ -38,10 +38,21 @@ internal class DeliveryListViewController: UIViewController {
         btn.setTitle("Details", for: .normal)
         return btn
     }()
+    
+    private var presenter: DeliveryListPresenter?
+    
+    convenience init(presenter: DeliveryListPresenter) {
+        self.init()
+        self.presenter = presenter
+    }
 
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        presenter?.attachView(view: self)
+        
+        presenter?.loadDeliveryList()
         
         setupUI()
         
@@ -49,7 +60,9 @@ internal class DeliveryListViewController: UIViewController {
     }
     
     private func setupUI() {
+        
         setupSubviews()
+        
         setupAutoLayout()
     }
 }

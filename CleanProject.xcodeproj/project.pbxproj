@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		12BA46E6A30C28FF3DE4BA4F /* Pods_CleanProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C337385977C2F0C737E334B /* Pods_CleanProjectTests.framework */; };
 		5107972925A6FDDA00E55001 /* DeliveryListSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107972825A6FDDA00E55001 /* DeliveryListSectionController.swift */; };
+		5107973825A7009300E55001 /* DataAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107973725A7009300E55001 /* DataAssembly.swift */; };
+		5107974025A700A600E55001 /* DomainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107973F25A700A600E55001 /* DomainAssembly.swift */; };
+		5107974525A700B200E55001 /* PresenterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107974425A700B200E55001 /* PresenterAssembly.swift */; };
+		51CC78D125A70520002AA68B /* DeliveryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CC78D025A70520002AA68B /* DeliveryListViewController.swift */; };
+		51CC78D625A70533002AA68B /* DeliveryListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CC78D525A70533002AA68B /* DeliveryListPresenter.swift */; };
+		51CC78DE25A7064A002AA68B /* MVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CC78DD25A7064A002AA68B /* MVP.swift */; };
 		51EFC63B25A6D7F90076C7C1 /* CoreDeliveryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EFC63225A6D7F90076C7C1 /* CoreDeliveryRepository.swift */; };
 		51EFC63C25A6D7F90076C7C1 /* DeliveryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EFC63325A6D7F90076C7C1 /* DeliveryRepository.swift */; };
 		51EFC63E25A6D7F90076C7C1 /* DeliveryServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EFC63725A6D7F90076C7C1 /* DeliveryServiceAPI.swift */; };
 		51EFC64625A6D8220076C7C1 /* DeliveryParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EFC64525A6D8220076C7C1 /* DeliveryParam.swift */; };
 		51EFC65425A6DC650076C7C1 /* Delivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EFC65325A6DC650076C7C1 /* Delivery.swift */; };
 		51EFC65D25A6E3B70076C7C1 /* LoadDeliveryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EFC65C25A6E3B70076C7C1 /* LoadDeliveryUseCase.swift */; };
-		51EFC66825A6E5280076C7C1 /* DeliveryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EFC66725A6E5280076C7C1 /* DeliveryListViewController.swift */; };
 		51EFC67325A6E5520076C7C1 /* DeliveryListViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EFC67225A6E5520076C7C1 /* DeliveryListViewController+UI.swift */; };
 		51EFC67B25A6E5940076C7C1 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 51EFC67A25A6E5940076C7C1 /* data.json */; };
 		51EFC68025A6E6860076C7C1 /* DeliveryDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EFC67F25A6E6860076C7C1 /* DeliveryDetailCell.swift */; };
@@ -24,7 +29,6 @@
 		51EFC69025A6E9C70076C7C1 /* Diffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EFC68F25A6E9C70076C7C1 /* Diffable.swift */; };
 		51F4517225A6C7AA009F62D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F4517125A6C7AA009F62D8 /* AppDelegate.swift */; };
 		51F4517425A6C7AA009F62D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F4517325A6C7AA009F62D8 /* SceneDelegate.swift */; };
-		51F4517925A6C7AA009F62D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F4517725A6C7AA009F62D8 /* Main.storyboard */; };
 		51F4517B25A6C7AC009F62D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F4517A25A6C7AC009F62D8 /* Assets.xcassets */; };
 		51F4517E25A6C7AC009F62D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F4517C25A6C7AC009F62D8 /* LaunchScreen.storyboard */; };
 		51F4518925A6C7AC009F62D8 /* CleanProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F4518825A6C7AC009F62D8 /* CleanProjectTests.swift */; };
@@ -56,13 +60,18 @@
 		3C337385977C2F0C737E334B /* Pods_CleanProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		498019D5EBA448ABA7595DFF /* Pods-CleanProject-CleanProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanProject-CleanProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-CleanProject-CleanProjectUITests/Pods-CleanProject-CleanProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5107972825A6FDDA00E55001 /* DeliveryListSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryListSectionController.swift; sourceTree = "<group>"; };
+		5107973725A7009300E55001 /* DataAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAssembly.swift; sourceTree = "<group>"; };
+		5107973F25A700A600E55001 /* DomainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainAssembly.swift; sourceTree = "<group>"; };
+		5107974425A700B200E55001 /* PresenterAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterAssembly.swift; sourceTree = "<group>"; };
+		51CC78D025A70520002AA68B /* DeliveryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryListViewController.swift; sourceTree = "<group>"; };
+		51CC78D525A70533002AA68B /* DeliveryListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryListPresenter.swift; sourceTree = "<group>"; };
+		51CC78DD25A7064A002AA68B /* MVP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP.swift; sourceTree = "<group>"; };
 		51EFC63225A6D7F90076C7C1 /* CoreDeliveryRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDeliveryRepository.swift; sourceTree = "<group>"; };
 		51EFC63325A6D7F90076C7C1 /* DeliveryRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryRepository.swift; sourceTree = "<group>"; };
 		51EFC63725A6D7F90076C7C1 /* DeliveryServiceAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryServiceAPI.swift; sourceTree = "<group>"; };
 		51EFC64525A6D8220076C7C1 /* DeliveryParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryParam.swift; sourceTree = "<group>"; };
 		51EFC65325A6DC650076C7C1 /* Delivery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delivery.swift; sourceTree = "<group>"; };
 		51EFC65C25A6E3B70076C7C1 /* LoadDeliveryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDeliveryUseCase.swift; sourceTree = "<group>"; };
-		51EFC66725A6E5280076C7C1 /* DeliveryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DeliveryListViewController.swift; path = CleanProject/Source/Presenter/Interface/DeliveryListViewController.swift; sourceTree = SOURCE_ROOT; };
 		51EFC67225A6E5520076C7C1 /* DeliveryListViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeliveryListViewController+UI.swift"; sourceTree = "<group>"; };
 		51EFC67A25A6E5940076C7C1 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		51EFC67F25A6E6860076C7C1 /* DeliveryDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailCell.swift; sourceTree = "<group>"; };
@@ -72,7 +81,6 @@
 		51F4516E25A6C7AA009F62D8 /* CleanProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F4517125A6C7AA009F62D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51F4517325A6C7AA009F62D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		51F4517825A6C7AA009F62D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51F4517A25A6C7AC009F62D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51F4517D25A6C7AC009F62D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51F4517F25A6C7AC009F62D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,9 +135,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5107973625A7008400E55001 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				5107973725A7009300E55001 /* DataAssembly.swift */,
+				5107973F25A700A600E55001 /* DomainAssembly.swift */,
+				5107974425A700B200E55001 /* PresenterAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		51EFC62825A6D7F90076C7C1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				5107973625A7008400E55001 /* Assembly */,
 				51EFC63025A6D7F90076C7C1 /* Data */,
 				51EFC65B25A6E2930076C7C1 /* Domain */,
 				51EFC66425A6E49C0076C7C1 /* Presenter */,
@@ -184,21 +203,22 @@
 		51EFC66425A6E49C0076C7C1 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				51EFC66525A6E4C30076C7C1 /* Interface */,
+				51EFC66525A6E4C30076C7C1 /* Delivery List */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		51EFC66525A6E4C30076C7C1 /* Interface */ = {
+		51EFC66525A6E4C30076C7C1 /* Delivery List */ = {
 			isa = PBXGroup;
 			children = (
-				51EFC66725A6E5280076C7C1 /* DeliveryListViewController.swift */,
+				51CC78D525A70533002AA68B /* DeliveryListPresenter.swift */,
+				51CC78D025A70520002AA68B /* DeliveryListViewController.swift */,
 				51EFC67225A6E5520076C7C1 /* DeliveryListViewController+UI.swift */,
 				51EFC68925A6E6D20076C7C1 /* DeliveryListAdapter.swift */,
 				5107972825A6FDDA00E55001 /* DeliveryListSectionController.swift */,
 				51EFC66625A6E4F90076C7C1 /* View */,
 			);
-			path = Interface;
+			path = "Delivery List";
 			sourceTree = "<group>";
 		};
 		51EFC66625A6E4F90076C7C1 /* View */ = {
@@ -214,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				51EFC68F25A6E9C70076C7C1 /* Diffable.swift */,
+				51CC78DD25A7064A002AA68B /* MVP.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -275,7 +296,6 @@
 				51EFC67A25A6E5940076C7C1 /* data.json */,
 				51F4517125A6C7AA009F62D8 /* AppDelegate.swift */,
 				51F4517325A6C7AA009F62D8 /* SceneDelegate.swift */,
-				51F4517725A6C7AA009F62D8 /* Main.storyboard */,
 				51F4517C25A6C7AC009F62D8 /* LaunchScreen.storyboard */,
 				51F4517A25A6C7AC009F62D8 /* Assets.xcassets */,
 			);
@@ -405,7 +425,6 @@
 			files = (
 				51F4517E25A6C7AC009F62D8 /* LaunchScreen.storyboard in Resources */,
 				51F4517B25A6C7AC009F62D8 /* Assets.xcassets in Resources */,
-				51F4517925A6C7AA009F62D8 /* Main.storyboard in Resources */,
 				51EFC67B25A6E5940076C7C1 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,18 +554,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				51EFC69025A6E9C70076C7C1 /* Diffable.swift in Sources */,
-				51EFC66825A6E5280076C7C1 /* DeliveryListViewController.swift in Sources */,
 				51EFC68025A6E6860076C7C1 /* DeliveryDetailCell.swift in Sources */,
 				51EFC63B25A6D7F90076C7C1 /* CoreDeliveryRepository.swift in Sources */,
 				51EFC68525A6E6950076C7C1 /* DeliveryDetailCell+UI.swift in Sources */,
 				51F4517225A6C7AA009F62D8 /* AppDelegate.swift in Sources */,
 				51EFC65D25A6E3B70076C7C1 /* LoadDeliveryUseCase.swift in Sources */,
+				51CC78D125A70520002AA68B /* DeliveryListViewController.swift in Sources */,
+				5107973825A7009300E55001 /* DataAssembly.swift in Sources */,
 				51F4517425A6C7AA009F62D8 /* SceneDelegate.swift in Sources */,
 				51EFC64625A6D8220076C7C1 /* DeliveryParam.swift in Sources */,
+				51CC78D625A70533002AA68B /* DeliveryListPresenter.swift in Sources */,
 				51EFC65425A6DC650076C7C1 /* Delivery.swift in Sources */,
 				51EFC63C25A6D7F90076C7C1 /* DeliveryRepository.swift in Sources */,
 				51EFC67325A6E5520076C7C1 /* DeliveryListViewController+UI.swift in Sources */,
+				5107974025A700A600E55001 /* DomainAssembly.swift in Sources */,
+				51CC78DE25A7064A002AA68B /* MVP.swift in Sources */,
 				51EFC63E25A6D7F90076C7C1 /* DeliveryServiceAPI.swift in Sources */,
+				5107974525A700B200E55001 /* PresenterAssembly.swift in Sources */,
 				51EFC68A25A6E6D20076C7C1 /* DeliveryListAdapter.swift in Sources */,
 				5107972925A6FDDA00E55001 /* DeliveryListSectionController.swift in Sources */,
 			);
@@ -584,14 +608,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		51F4517725A6C7AA009F62D8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				51F4517825A6C7AA009F62D8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		51F4517C25A6C7AC009F62D8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
