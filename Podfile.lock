@@ -1,0 +1,81 @@
+PODS:
+  - Alamofire (5.4.1)
+  - IGListDiffKit (4.0.0)
+  - IGListKit (4.0.0):
+    - IGListDiffKit (= 4.0.0)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya-ObjectMapper/Core (2.9):
+    - Moya (~> 14.0.0-beta.6)
+    - ObjectMapper
+  - Moya-ObjectMapper/RxSwift (2.9):
+    - Moya-ObjectMapper/Core
+    - Moya/RxSwift
+    - RxSwift
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - ObjectMapper (4.2.0)
+  - RxSwift (5.1.1)
+  - SnapKit (4.0.1)
+  - SwiftEventBus (5.0.0)
+  - Swinject (2.6.2)
+  - SwinjectAutoregistration (2.6.1):
+    - Swinject (~> 2.6)
+  - SwinjectStoryboard (2.2.0):
+    - Swinject (~> 2.6)
+
+DEPENDENCIES:
+  - IGListKit (= 4.0.0)
+  - Moya-ObjectMapper/RxSwift (= 2.9)
+  - Moya/RxSwift (= 14.0)
+  - RxSwift (= 5.1.1)
+  - SnapKit (= 4.0.1)
+  - SwiftEventBus (from `https://github.com/cesarferreira/SwiftEventBus.git`, tag `5.0.1`)
+  - Swinject (= 2.6.2)
+  - SwinjectAutoregistration (= 2.6.1)
+  - SwinjectStoryboard (= 2.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IGListDiffKit
+    - IGListKit
+    - Moya
+    - Moya-ObjectMapper
+    - ObjectMapper
+    - RxSwift
+    - SnapKit
+    - Swinject
+    - SwinjectAutoregistration
+    - SwinjectStoryboard
+
+EXTERNAL SOURCES:
+  SwiftEventBus:
+    :git: https://github.com/cesarferreira/SwiftEventBus.git
+    :tag: 5.0.1
+
+CHECKOUT OPTIONS:
+  SwiftEventBus:
+    :git: https://github.com/cesarferreira/SwiftEventBus.git
+    :tag: 5.0.1
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
+  IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Moya-ObjectMapper: 967a99d9ea3aa9c93ddbe112aeca3667f53bfe93
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  SwiftEventBus: b30f617a6aca5a9336464b4d3f5931034762f2d5
+  Swinject: cf7458774b1b00323080a9c67e47a1ee7f9d2af1
+  SwinjectAutoregistration: d0de7e48db3601b8b130f2f84e5a8399e0224135
+  SwinjectStoryboard: 32512ef16c2b0ff5b8f823b23539c4a50f6d3383
+
+PODFILE CHECKSUM: cd934ad2bdaba2b0664089161ede496bce609ce4
+
+COCOAPODS: 1.9.3
